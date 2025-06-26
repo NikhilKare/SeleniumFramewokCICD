@@ -1,0 +1,14 @@
+[
+	{
+		"email" : "test2130@gmail.com",
+		"pass" : "Test@123",
+		"productName" : "ZARA COAT 3",
+		"expectedResult" : "true"
+	},
+	{
+		"email" : "test@gmail.com",
+		"pass" : "Test",
+		"productName" : "ADIDAS ORIGINAL",
+		"expectedResult" : "false"
+	}
+]

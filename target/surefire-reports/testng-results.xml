@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-24T09:04:22 IST" name="Suite" finished-at="2025-06-24T09:04:35 IST" duration-ms="13276">
+    <groups>
+      <group name="purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" name="submitOrder" class="com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.verifyOrder(java.util.HashMap)[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" name="verifyOrder" class="com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest"/>
+      </group> <!-- purchase -->
+      <group name="error">
+        <method signature="ErrorValidationTest.errorValidation()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest@59402b8f]" name="errorValidation" class="com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest"/>
+      </group> <!-- error -->
+    </groups>
+    <test started-at="2025-06-24T09:04:22 IST" name="Error Validations" finished-at="2025-06-24T09:04:27 IST" duration-ms="4838">
+      <class name="com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest@59402b8f]" started-at="2025-06-24T09:04:22 IST" name="launchApplication" finished-at="2025-06-24T09:04:27 IST" duration-ms="4499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="errorValidation()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest@59402b8f]" started-at="2025-06-24T09:04:27 IST" name="errorValidation" finished-at="2025-06-24T09:04:27 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest@59402b8f]" started-at="2025-06-24T09:04:27 IST" name="closeBrowser" finished-at="2025-06-24T09:04:27 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.nikhil.testing.seleniumTestingFresh.ErrorValidationTest -->
+    </test> <!-- Error Validations -->
+    <test started-at="2025-06-24T09:04:22 IST" name="Submit Order" finished-at="2025-06-24T09:04:35 IST" duration-ms="13276">
+      <class name="com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:22 IST" name="launchApplication" finished-at="2025-06-24T09:04:25 IST" duration-ms="2511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:25 IST" name="submitOrder" data-provider="getData" finished-at="2025-06-24T09:04:27 IST" duration-ms="2470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Test@123, expectedResult=true, email=test2130@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:27 IST" name="closeBrowser" finished-at="2025-06-24T09:04:27 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:27 IST" name="launchApplication" finished-at="2025-06-24T09:04:29 IST" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:29 IST" name="submitOrder" data-provider="getData" finished-at="2025-06-24T09:04:29 IST" duration-ms="139" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Test, expectedResult=false, email=test@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping verification for user with failed login for Email : test@gmail.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping verification for user with failed login for Email : test@gmail.com
+at com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest.submitOrder(SubmitOrderTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:29 IST" name="closeBrowser" finished-at="2025-06-24T09:04:30 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:30 IST" name="launchApplication" finished-at="2025-06-24T09:04:30 IST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyOrder(java.util.HashMap)[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:30 IST" name="verifyOrder" data-provider="getData" finished-at="2025-06-24T09:04:34 IST" depends-on-methods="com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest.submitOrder" duration-ms="3197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Test@123, expectedResult=true, email=test2130@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:34 IST" name="closeBrowser" finished-at="2025-06-24T09:04:34 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:34 IST" name="launchApplication" finished-at="2025-06-24T09:04:34 IST" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="verifyOrder(java.util.HashMap)[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:34 IST" name="verifyOrder" data-provider="getData" finished-at="2025-06-24T09:04:35 IST" depends-on-methods="com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest.submitOrder" duration-ms="744" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=Test, expectedResult=false, email=test@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping verification for user with failed login for Email : test@gmail.com]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping verification for user with failed login for Email : test@gmail.com
+at com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest.verifyOrder(SubmitOrderTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest@54c5a2ff]" started-at="2025-06-24T09:04:35 IST" name="closeBrowser" finished-at="2025-06-24T09:04:35 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.nikhil.testing.seleniumTestingFresh.SubmitOrderTest -->
+    </test> <!-- Submit Order -->
+  </suite> <!-- Suite -->
+</testng-results>
